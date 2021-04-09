@@ -15,7 +15,7 @@ export default function Results(props) {
           </div>
         );
       })}
-        Results will display in here</div>
+        </div>
   );} else {
     return null;
   }
