@@ -17,3 +17,7 @@
   color: #f29a30;
   margin-top: 15px;
 }
+.App .container {
+  max-width: 60%;
+  min-width: 500px;
+}
