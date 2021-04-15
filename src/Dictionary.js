@@ -15,9 +15,6 @@ export default function Dictionary(props) {
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
   }
-  function handleLyricsResponse(response) {
-    console.log(response.data);
-  }
   function search() {
     //documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
@@ -26,11 +23,6 @@ export default function Dictionary(props) {
     let pexelsApiKey = "563492ad6f91700001000001dd6daddb1e034ae686a3b5eb6c9f4b6c";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     axios.get(pexelsApiUrl, { headers: {"Authorization" : pexelsApiKey}}).then(handlePexelsResponse);
-
-    let lyricsApiKey = `8760`;
-    let lyricsToken = `KLNLaKVA2g3Ti1Vo`;
-    let lyricsApiUrl = `https://www.stands4.com/services/v2/lyrics.php?uid=${lyricsApiKey}&tokenid=${lyricsToken}&term=${keyword}`;
-    axios.get(lyricsApiUrl).then(handleLyricsResponse);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -58,6 +50,19 @@ export default function Dictionary(props) {
         </div>
         </section>
         <Results results={results} />
+        <section>
+          <div className="row">
+            <div className="col">
+              <a href={`https://www.google.com/search?q=lyrics+with+${keyword}`} target="_blank" rel="noreferrer" className="extra-info-button">🎶 Lyrics with <i>{keyword}</i></a>
+            </div>
+            <div className="col">
+              <a href={`https://www.google.com/search?q=books+with+${keyword}`} target="_blank" rel="noreferrer" className="extra-info-button">📚 Books with <i>{keyword}</i></a>
+            </div>
+            <div className="col">
+              <a href={`https://www.google.com/search?q=films+with+${keyword}`} target="_blank" rel="noreferrer" className="extra-info-button">🎥 Films with <i>{keyword}</i></a>
+            </div>
+          </div>
+        </section>
         <Photos photos={photos} />
       </div>
     );
