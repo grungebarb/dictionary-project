@@ -18,3 +18,11 @@
 .Phonetics .text {
   color: dimgrey;
 }
+.Phonetics .phonetics-audio {
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: 30px;
+  border: #f29a30 solid 1px;
+  border-radius: 30px;
+}
