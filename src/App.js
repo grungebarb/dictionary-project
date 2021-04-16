@@ -16,7 +16,7 @@ export default function App() {
           <Dictionary defaultKeyword="hello" />
         </main>
         <footer className="App-footer">
-          <small>Coded by GrungeBarb</small>
+          <small>This project was coded by <a href="https://www.instagram.com/grungebarb_art/" target="_blank" rel="noreferrer">GrungeBarb</a> <a href="https://www.instagram.com/grungebarb/" target="_blank" rel="noreferrer">(Bárbara Llansó Di Renzo)</a> and is <a href="https://github.com/grungebarb/dictionary-project" target="_blank" rel="noreferrer">open sourced on GitHub</a> and hosted in <a href="https://hungry-lewin-ec5b11.netlify.app/" target="_blank" rel="noreferrer">Netlify</a></small>
         </footer>
       </div>
     </div>

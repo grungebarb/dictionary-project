@@ -22,3 +22,10 @@ body {
   color: #f29a30;
   margin-top: 15px;
 }
+.App-footer a {
+  color: #f29a30;
+  text-decoration: none;
+}
+.App-footer small {
+  color: dimgrey;
+}
