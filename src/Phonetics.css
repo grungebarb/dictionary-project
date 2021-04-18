@@ -1,10 +1,14 @@
 .Phonetics {
   margin: 20px 0;
 }
+.Phonetics div {
+  margin-bottom: 50px;
+}
 .Phonetics a {
-  color: #f29a30;
+  background-color: #f29a30;
+  color: white;
   text-decoration: none;
-  padding: 5px 13px 9px;
+  padding: 6px 13px 9px;
   border: #f29a30 solid 1px;
   border-radius: 30px;
   transition: all 250ms ease-in-out;
@@ -12,17 +16,28 @@
   font-size: 13px;
 }
 .Phonetics a:hover {
-  background-color: #f29a30;
-  color: white;
+  background-color: #ffdbb3;
+  color: #f29a30;
 }
-.Phonetics .text {
+.Phonetics .text,
+.Phonetics .text-audio {
   color: dimgrey;
+  font-size: 20px;
+}
+.Phonetics .text-audio {
+  margin-left: 5px;
 }
 .Phonetics .phonetics-audio {
   display: block;
   margin: 10px 0;
-  width: 100px;
+  width: 120px;
   height: 30px;
   border: #f29a30 solid 1px;
   border-radius: 30px;
+}
+.Phonetics small {
+  color: #f29a30;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
 }

@@ -49,7 +49,6 @@ export default function Dictionary(props) {
           suggested words to look up: forest, sunset, hello, daisy...
         </div>
         </section>
-        <Results results={results} />
         <section>
           <div className="row">
             <div className="col">
@@ -63,6 +62,8 @@ export default function Dictionary(props) {
             </div>
           </div>
         </section>
+        <Results results={results} />
+        
         <Photos photos={photos} />
       </div>
     );

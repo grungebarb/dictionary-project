@@ -42,6 +42,9 @@
   font-size: 13px;
   display: block;
   text-align: center;
+
+  background-color: #ffdbb3;
+  color: dimgrey;
 }
 .Dictionary .extra-info-button:hover {
   background-color: #f29a30;
